@@ -1,5 +1,3 @@
-package VMachine;
-
 public class Choice 
 {
 	public double total;

@@ -1,5 +1,3 @@
-package VMachine;
-
 public class Bank 
 {
 	public int num;

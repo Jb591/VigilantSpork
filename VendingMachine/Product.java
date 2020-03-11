@@ -1,5 +1,3 @@
-package VMachine;
-
 public class Product 
 {
 	public String name;
