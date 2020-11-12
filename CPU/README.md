@@ -10,3 +10,15 @@ For this project I created a basic matrix unit that could be utilized in deep le
 * Matrix multiplier will multiply two 4x4 matrix and return a 4x4 matrix 
 * Scalar multiplication is multiplying a matrix by single number
 * Add and subtract will add and subtract 2 4x4 matrix 
+* Transpose will flip a matrix along a diagnol
+
+## Test Bench Operation 
+
+Load 2 matrix’s into RAM. Load opcodes into RAM for the execution unit.
+Opertaions to be performed:
+*Add the first matrix to the second matrix and store the result in memory
+*Subtract the first matrix from the result in step 1 and store the result somewhere else in memory
+*Transpose the result from step 1 store in memory
+*Scale the result in step 3 store in a register
+*Multiply the result from step 4 by the result in step 3, store in memory
+
