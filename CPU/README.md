@@ -11,15 +11,19 @@ For this project I created a basic matrix unit that could be utilized in deep le
 * Scalar multiplication is multiplying a matrix by single number
 * Add and subtract will add and subtract 2 4x4 matrix 
 * Transpose will flip a matrix along a diagnol
+* The test bench will Start the clock and toggle reset
+* Execution engine will fetch the first opcode from instruction memory and begin execution.
+* The execution engine will direct the transfer of data between the memory, the appropriate matrix modules and memory. 
+* The execution engine will continue executing programs until is finds a STOP opcode.
+* The test bench will display an output waveform to determine correct operation. 
 
 ## Test Bench Operation
 
 Load 2 matrix’s into RAM. Load opcodes into RAM for the execution unit.
+
 Opertaions to be performed:
-
-* Add the first matrix to the second matrix and store the result in memory
-* Subtract the first matrix from the result in step 1 and store the result somewhere else in memory
-* Transpose the result from step 1 store in memory
-* Scale the result in step 3 store in a register
-* Multiply the result from step 4 by the result in step 3, store in memory
-
+1. Add the first matrix to the second matrix and store the result in memory
+2. Subtract the first matrix from the result in step 1 and store the result somewhere else in memory
+3. Transpose the result from step 1 store in memory
+4. Scale the result in step 3 store in a register
+5. Multiply the result from step 4 by the result in step 3, store in memory
